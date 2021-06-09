@@ -1,0 +1,58 @@
+.button {
+  @include FlexCentered();
+  width: 240px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 38px;
+  border-width: 2px;
+  border-style: solid;
+
+  &--light {
+    color: var(--color-accent);
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+
+    &:hover {
+      color: var(--color-white);
+      background-color: transparent;
+    }
+  }
+
+  &--accent {
+    color: var(--color-white);
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+
+    &:hover {
+      color: var(--color-accent);
+      background-color: transparent;
+    }
+  }
+
+  &--light-skeleton {
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color-accent);
+      background-color: var(--color-white);
+    }
+  }
+
+  &--accent-skeleton {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+    }
+  }
+}

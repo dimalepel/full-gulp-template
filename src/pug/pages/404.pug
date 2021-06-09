@@ -1,0 +1,13 @@
+extends ../base
+
+block vars
+  - var pageTitle = "Страница не найдена";
+
+block content
+  //- page content
+  .container
+    .page-not-found
+      h1.page-not-found__title Упс...
+      p.page-not-found__digits 40<span class="page-not-found__digits-clone">4</span>
+      p.page-not-found__description Эта страница не существует
+      a(href="/").button.button--accent.page-not-found__home Главная

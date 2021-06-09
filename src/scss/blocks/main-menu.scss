@@ -1,0 +1,17 @@
+.main-menu {
+  @include List-Reset();
+  display: flex;
+  align-items: center;
+}
+
+.main-menu__item {
+  margin-right: 34px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-menu__link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+label.error {
+  .form__item & {
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    font-size: 12px;
+    line-height: 13px;
+    color: #bb3c3c;
+    width: 100%;
+  }
+}

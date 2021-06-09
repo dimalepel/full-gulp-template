@@ -1,0 +1,38 @@
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% + 12px);
+  width: 50px;
+  height: 50px;
+  padding-right: 0;
+  padding-left: 0;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+
+  &:hover {
+    background-color: var(--color-accent);
+  }
+
+  &--prev {
+    left: -70px;
+  }
+
+  &--next {
+    right: -70px;
+  }
+}
+
+.slick-arrow__icon {
+  fill: var(--color-accent);
+
+  @include Transition();
+
+  .slick-arrow:hover & {
+    fill: var(--color-white);
+  }
+}
